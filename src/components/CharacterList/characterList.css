@@ -1,0 +1,10 @@
+.character_list {
+    list-style: none;
+    margin: 0 0 10px 0;
+    padding: 5px 10px;
+    display: grid;
+    width: 100%;
+    max-width: 1024px;
+    gap: 10px;
+    grid-template-columns: repeat(5, 1fr);
+}

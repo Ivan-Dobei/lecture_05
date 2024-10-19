@@ -1,0 +1,42 @@
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.count_of_pages {
+    font-size: 14px;
+    margin-right: 15px;
+}
+
+.btn {
+    box-sizing: border-box;
+    cursor: pointer;
+    padding: 5px 15px;
+    background-color:#189dfc;
+    border-radius: 5px;
+    color: white;
+    border: 1px solid #189dfc;
+    transition: background-color ease-in-out 0.2s, color ease-in-out 0.3s;
+}
+
+.btn:hover {
+    background-color: white;
+    color: #189dfc;
+}
+
+.btn:not(:last-child) {
+    margin-right: 15px;
+}
+
+.disabled_btn {
+    background-color: #177bc2;
+    color: white;
+    cursor: auto;
+}
+.disabled_btn:hover {
+    background-color: #177bc2;
+    color: white;
+}

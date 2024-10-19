@@ -1,0 +1,12 @@
+.header {
+    width: 100%;
+    padding: 15px 0;
+    background-color: #189dfc;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.title {
+    font-size: 24px;
+    color: white;
+}

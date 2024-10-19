@@ -1,0 +1,31 @@
+.character_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #189dfc;
+    border-radius: 10px;
+    padding: 10px;
+    transition: border-color ease-in-out 0.2s, box-shadow ease-in-out 0.3s;
+}
+
+.character_item:hover {
+    border-color: #189dfc;
+    box-shadow: 0 0 10px rgba(24, 157, 252, 0.5);
+}
+
+.item_img {
+    max-width: 75px;
+    height: auto;
+    display: block;
+    border: none;
+    margin-bottom: 5px;
+}
+
+.item_name {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.item_description {
+    font-size: 12px;
+}
