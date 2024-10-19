@@ -10,12 +10,10 @@ function App() {
     const [characters, setCharacters] = useState([]);
     const [info, setInfo] = useState({});
     const [url, setUrl] = useState('https://rickandmortyapi.com/api/character');
-
-    useEffect(() => {
-        fetchCharacters(url);
-    }, [url])
+    const [isLoading, setIsLoading] = useState(false);
 
     async function fetchCharacters(url) {
+        setIsLoading(true);
         try {
             const response = await fetch(url);
 
@@ -29,14 +27,20 @@ function App() {
 
         } catch (error) {
             console.error('Fetch error:', error);
+        } finally {
+            setIsLoading(false);
         }
     }
+
+    useEffect(() => {
+        fetchCharacters(url);
+    }, [url])
 
     return (
         <div className="main_div">
             <Header/>
             <section className="container main_section">
-                {!characters && <Loading/>}
+                {isLoading && <Loading/>}
                 <CharacterList characterList={characters}/>
             </section>
             <Pagination info={info} setUrl={setUrl}/>

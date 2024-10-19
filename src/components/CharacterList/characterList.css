@@ -8,3 +8,15 @@
     gap: 10px;
     grid-template-columns: repeat(5, 1fr);
 }
+
+@media (max-width: 768px) {
+    .character_list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 426px) {
+    .character_list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
